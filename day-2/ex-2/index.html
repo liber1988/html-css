@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create an Account</h1>
+
+    <form action="/action_page.php">
+        <label for="fname">
+            <b>
+              Email:
+             </b>
+        </label><br>
+        <input type="text" id="fname" name="fname" ><br>
+
+        <label for="lname">
+            <b>
+                 Password:
+            </b>
+        </label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label>
+            <b>
+                Age
+            </b><br>
+        </label>
+        <select id="years" name="years">
+            <option>Select Age</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+        </select><br><br>
+
+
+        <label for="fname">
+            <b>
+                Tell us a little about yourself
+            </b>
+        </label><br>
+
+        <textarea name="message" rows="10" cols="30"> </textarea><br>
+
+        <input type="checkbox" id="myCheckbox" name="myCheckbox">
+            <label for="myCheckbox">
+                I agree to the <a href="https://google.com">terms of service</a>
+            </label><br><br>
+
+
+        <input type="submit" value="Submit"><br>
+    </form> 
+</body>
+</html>
