@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    
+ 
+    <style>
+        body{
+            margin: 0%;
+        }
+        .global-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1; /* Ensure image is behind other content */
+        }
+        .upper_tags{
+            font-size: x-large;
+            border-top: 1px;
+            color: chocolate;
+            text-decoration: underline;
+        }
+        .container_headers{
+
+            font-size: 50px;
+            margin-left: 375px;
+            color: chocolate;
+        }
+        h3 {
+            display:inline;
+            margin-right: 150px;
+            font-size: xx-large;
+          }
+        .container_upper_tags{
+            margin-left: 50px;
+        }
+
+        .move_to_center{
+            margin-left: 150px;
+        }
+        .blue_background{
+
+            background-color: lightblue;
+            margin:0px;
+            position: absolute;
+            top: 450px;
+            bottom: 0;
+            left:0;
+            right:0;
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <img class="global-image" src="C:\Users\reuve\OneDrive\Desktop\Appleseed folder\html-css\day-3\ex-2\image\sky-image.jpeg">
+    <section class="blue_background">
+        <div class="container_headers">
+            <h1 style="text-decoration: underline">
+                The Golan heights
+            </h1>
+
+            <h2 >
+                Cool places to visit
+            </h2>
+         </div>
+
+        <div class="move_to_center">
+            <div class="upper_tags">
+                <h3 >
+                    Hermon Mountain
+                </h3>
+                <h3 >
+                    Sea of Galilee
+                </h3>
+                <h3 >
+                    Hula Valley
+                </h3>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

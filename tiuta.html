@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card with Full Page Background Image</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('C:\Users\reuve\OneDrive\Desktop\Appleseed folder\html-css\day-3\ex-2\image\sky-image.jpeg'); /* Replace 'your-image.jpg' with the URL of your image */
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .card {
+        width: 300px; /* Adjust the width of the card as needed */
+        height: 200px; /* Adjust the height of the card as needed */
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 50px auto; /* Center the card vertically and horizontally */
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+        text-align: center;
+    }
+
+    .card-content {
+        padding: 20px;
+        color: black;
+    }
+
+    h1, p {
+        margin: 0;
+        margin-bottom: 10px; /* Add margin between headings and paragraphs */
+    }
+
+    .tag {
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="card-content">
+        <h1>Welcome to Our Website</h1>
+        <p>Discover amazing content and services.</p>
+        <span class="tag">New</span>
+    </div>
+</div>
+
+</body>
+</html>
