@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            border: 250px solid blue;
+            
+            margin: 0px;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            width: auto;
+            height: 50vh;
+            border: 10px solid red;
+            margin: 0px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .color{
+            color: red;
+        }
+           a::before{
+            content: "Please visit this site";
+            color: black;
+           } 
+           a::after{
+            content: " for more information.";
+            color: black;
+           }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <a class="color" href="www.google.com">Website(https//google.com</a>
+    </div>
+</body>
+</html>
