@@ -1,0 +1,64 @@
+
+
+:root{
+    --body-color:#fff;
+    --back-color: #f4f4f4;
+    --btn-color: black;
+}
+.dark-theme{
+    --body-color:black;
+    --back-color: black;
+    --btn-color: white; 
+}
+body{
+    background-color: var(--body-color);
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    height: 40vh;
+    background-color: var(--back-color);
+    opacity: 0.5;
+}
+
+.image{
+    padding-top: 20px;
+    background-image: url('images/profile.jpeg');
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+
+}
+h3{
+    text-align: center;
+    color: var(--btn-color);
+    z-index: 3;
+}
+h2{
+    text-align: center;
+    color: var(--btn-color);
+    z-index: 3;
+}
+h1{
+    text-align: center;
+    color: var(--btn-color);
+    z-index: 3;
+}
+.btn{
+    color: var(--back-color);
+    cursor: pointer;
+    background-color:var(--btn-color);
+    height: 6vh;
+    width: 10vw;
+    border: 5px solid rgb(200, 200, 200,0.5);
+}
