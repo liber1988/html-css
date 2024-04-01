@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+            background: gray;
+
+
+        }
+        .box{
+
+            width:300px;
+            height:300px;
+            background: red;
+            position: relative;
+        }
+        .box:hover{
+            width:300px;
+            height:300px;
+            background: rgb(0, 0, 0, 0.4);
+        }
+        .box::before{
+            content:"";
+            cursor: auto;
+            width: 50%;
+            height: 100%;
+            background: rgb(116, 7, 7);
+            position: absolute;
+            top:0px;
+            left:0px;
+            z-index: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
