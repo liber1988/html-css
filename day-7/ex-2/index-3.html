@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red square</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 900px;
+        }
+        .box{
+            
+            width: 50%;
+            height: 50%;
+            background-color: black;
+            transform: translate(-50%, -50%);
+        }
+        .box::before{
+            content: "Cool border";
+            color: white;
+            position: absolute;
+            top: 50%;
+            right:45%;
+            text-align: center;
+            
+            z-index: 2;
+        }
+        .box::after{
+            content: "";
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: red 3px groove;
+        
+            z-index: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+
+    </div>
+    
+</body>
+</html>
