@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            height: 200vh;
+            margin: 0;
+        }
+
+        .container{
+            width: 600px;
+            height: 600px;
+            background-color: aliceblue;
+            position: relative;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;  
+        }
+        .pos{
+            position: fixed;
+            top: 0;
+            
+           
+            
+
+            
+           
+            
+        }
+        .pos-2{
+            position: relative;
+            
+            z-index: 10;
+
+            
+
+            
+            
+        }
+        .pos-3{
+            position: absolute;
+            
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <div class="box pos" style="background-color: blue;"></div>
+    <div class="box pos-2" style="background-color: green;"></div>
+    <div class="box pos-3" style="background-color:rgb(10, 0, 0);"></div>
+    
+    </div>
+</body>
+</html>

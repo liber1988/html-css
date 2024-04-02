@@ -1,0 +1,155 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap:100px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+button{
+    border: none;
+    padding: 0;
+    margin: 0;
+    padding-inline: 0;
+    padding-block: 0;
+}
+
+.three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    
+}
+
+.two{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    
+}
+
+h4{
+    z-index: 15;
+}
+.btn{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.translate-y{
+    width: 100px;
+    height: 50px;
+    position: relative;
+}
+.translate-y::before{
+    content: "";
+    width: 100px;
+    height: 0px;
+    transition:  height 2s ease;
+    background-color: brown;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+
+.translate-y:hover::before{
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    z-index: 10;
+}
+
+
+.translate-x{
+    width: 100px;
+    height: 50px;
+    position: relative;
+}
+.translate-x::before{
+    content: "";
+    width: 0px;
+    height: 50px;
+    transition:  width 2s ease;
+    background-color: brown;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+
+.translate-x:hover::before{
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    z-index: 10;
+}
+
+.rotate{
+    width: 100px;
+    height: 50px;
+    position: relative;
+}
+.rotate::before{
+    content: "";
+    width: 100px;
+    height: 110px;
+    transform: rotate(0deg);
+    transform-origin: top right;
+    transition:  transform 4s ease;
+    background-color: brown;
+    position: absolute;
+    left:-100px;
+    top: -25px;
+ 
+ 
+}
+
+
+.rotate:hover::before{
+    cursor: pointer;
+    z-index: 10;
+    transform: rotate(-90deg);
+}
+
+.skew{
+    width: 100px;
+    height: 50px;
+    position: relative;
+}
+.skew::before{
+    content: "";
+    width: 100px;
+    height: 50px;
+    transform: skew(15deg,15deg);
+    /* transform: rotate(0deg); */
+ 
+    transition:  transform 4s ease;
+    background-color: brown;
+    position: absolute;
+    top:0;
+    left: 0;
+ 
+ 
+}
+
+
+.skew:hover::before{
+    transform: rotate(180);
+    cursor: pointer;
+    z-index: 10;
+    
+}
