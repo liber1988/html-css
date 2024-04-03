@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Ex-1</title>
+    <style>
+
+           
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);   
+            grid-template-rows: repeat(3, 75px);
+            background-color: #03702d;
+            position: static;
+            z-index: -1;  
+            grid-gap: 10px;  
+            padding: 20px;
+
+    }
+
+        .red{
+            background-color: rgb(245, 11, 11);
+            width: 100%;
+            height: 100%;  
+            grid-column: 1/span 4;
+            border: 2px black solid;
+            border-radius: 4px;
+        }
+
+        .blue{
+            width: 100%;
+            height: 100%;            
+            background-color: rgb(28, 25, 207);
+            grid-column: 1/span 2;
+            grid-row: 2/span 2;
+            border: 2px black solid;
+            border-radius: 4px;
+        }
+        .green{
+            background-color: rgb(8, 224, 26);
+            width: 100%;
+            height: 100%;  
+            border: 2px black solid;
+            border-radius: 4px;
+            grid-column: 3/span 2;
+        }
+
+        .sagol{
+            width: 100%;
+            height: 100%;            
+            background-color: rgb(151, 20, 211);
+            border: 2px black solid;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red"></div> 
+        <div class="blue"></div> 
+        <div class="green"></div>
+        <div class="sagol"></div>
+        <div class="sagol"></div>
+
+    </div>
+    
+    
+</body>
+</html>
