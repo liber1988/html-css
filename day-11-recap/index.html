@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar system</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+        position: relative;
+      }
+      .solar-system {
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        position: relative;
+      }
+      .sun {
+        background-color: yellow;
+        border-radius: 100%;
+        height: 5rem;
+        width: 5rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      .venus {
+        background-image: linear-gradient(to bottom, #ffcc00, #f1f0ef);
+        border-radius: 100%;
+        height: 1.5rem;
+        width: 1.5rem;
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        animation: orbit-planet-venus 30s linear infinite;
+      }
+      .mercury {
+        background-color: rgb(134, 133, 129);
+        border-radius: 100%;
+        height: 1rem;
+        width: 1rem;
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        top: 50%;
+        animation: orbit-planet-mercury 15s linear infinite;
+      }
+      @keyframes orbit-planet-mercury {
+        from {
+          transform: translate(-50%, -50%) rotate(0deg) translateY(2.5rem)
+            rotate(0deg);
+        }
+        to {
+          transform: translate(-50%, -50%) rotate(360deg) translateY(2.5rem)
+            rotate(-360deg);
+        }
+      }
+      @keyframes orbit-planet-venus {
+        from {
+          transform: translate(-50%, -50%) rotate(0deg) translateX(3.5rem)
+            rotate(0deg);
+        }
+        to {
+          transform: translate(-50%, -50%) rotate(360deg) translateX(3.5rem)
+            rotate(-360deg);
+        }
+      }
+      @keyframes orbit {
+        from {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        to {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+      #mercury-orbit {
+        height: 5rem;
+        width: 10rem;
+        border: 0.1rem dashed white;
+        border-radius: 50%;
+        z-index: 4;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        animation: orbit 15s linear infinite;
+      }
+      #venus-orbit {
+        height: 15rem;
+        width: 7.5rem;
+        border: 0.1rem dashed white;
+        border-radius: 50%;
+        z-index: 4;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        animation: orbit 30s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="solar-system">
+      <div class="sun"></div>
+      <div id="mercury-orbit"></div>
+      <div id="venus-orbit"></div>
+      <div class="mercury"></div>
+      <div class="venus"></div>
+    </div>
+  </body>
+</html>
